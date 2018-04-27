@@ -2,7 +2,7 @@
 
 if [ $# -eq 2 ]
 then
-  wget -q "https://github.com/${1}/archve/${2}.tar.gz"
+  wget -q "https://github.com/${1}/archive/${2}.tar.gz"
   echo `openssl dgst -sha256 ${2}.tar.gz`
   rm ${2}.tar.gz
 else
